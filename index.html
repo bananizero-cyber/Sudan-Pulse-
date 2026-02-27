@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudan Pulse | نبض السودان</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1E3A8A',   /* أزرق ملكي */
+                            gold: '#D97706',   /* ذهبي */
+                            green: '#059669',  /* أخضر زراعي */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* إضافة صورة خلفية احترافية للقسم الرئيسي (Hero) */
+        .hero-bg {
+            background-image: linear-gradient(rgba(30, 58, 138, 0.4), rgba(5, 150, 105, 0.3)), url('unnamed.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <nav class="bg-black/20 backdrop-blur-md fixed w-full z-50 top-0 transition-all duration-300 border-b border-white/10"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-3">
+                        <img src="sudan pulse.jpg" alt="Sudan Pulse Logo"
+                            class="h-12 sm:h-14 w-auto object-contain bg-white rounded-md p-1 shadow-sm">
+                        <span class="font-black text-2xl text-white tracking-tight">Sudan<span
+                                class="text-brand-gold">Pulse</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="#home" class="text-white/90 hover:text-brand-gold font-bold transition">الرئيسية</a>
+                    <a href="#about" class="text-white/90 hover:text-brand-gold font-bold transition">رؤيتنا</a>
+                    <a href="#sectors" class="text-white/90 hover:text-brand-gold font-bold transition">قطاعات
+                        الاستثمار</a>
+                    <a href="#contact"
+                        class="bg-brand-blue text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-lg border border-white/20">تواصل
+                        معنا</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white mt-16">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">السودان: المحيط الأزرق القادم للاستثمار</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light opacity-90">نعيد صياغة السردية. نربط رؤوس الأموال العالمية
+                بالفرص البكر في الزراعة، التعدين، والسياحة المستدامة.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#sectors"
+                    class="bg-brand-gold hover:bg-yellow-600 text-white font-bold py-4 px-8 rounded-full shadow-xl transition transform hover:-translate-y-1">استكشف
+                    الفرص <i class="fa-solid fa-arrow-left mr-2"></i></a>
+                <a href="#about"
+                    class="bg-transparent border-2 border-white hover:bg-white hover:text-brand-blue text-white font-bold py-4 px-8 rounded-full shadow-xl transition transform hover:-translate-y-1">شاهد
+                    التقرير المرئي</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-black text-brand-blue mb-4">لماذا Sudan Pulse؟</h2>
+            <div class="w-24 h-1 bg-brand-gold mx-auto mb-8"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                نحن لسنا مجرد منصة إخبارية؛ نحن "الجسر" الاستراتيجي الذي يربط بين إمكانات السودان الهائلة والمستثمر
+                الدولي. نقدم تحليلات مبنية على البيانات، ونسلط الضوء على 175 مليون فدان من الأراضي الزراعية، وثروات
+                معدنية غير مكتشفة، وتراث حضاري يمتد لآلاف السنين.
+            </p>
+        </div>
+    </section>
+
+    <section id="sectors" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-brand-blue mb-4">قطاعات النمو الاستراتيجية</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-brand-green flex items-center justify-center">
+                        <i class="fa-solid fa-seedling text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">الأمن الغذائي والزراعة</h3>
+                        <p class="text-gray-600 mb-4">أكثر من 175 مليون فدان من الأراضي الصالحة للزراعة. فرصة عالمية
+                            لتقنيات الزراعة الحديثة (Agri-Tech).</p>
+                        <a href="#" class="text-brand-green font-bold hover:underline">اقرأ التقرير &larr;</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-brand-gold flex items-center justify-center">
+                        <i class="fa-solid fa-gem text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">التعدين والطاقة</h3>
+                        <p class="text-gray-600 mb-4">ثالث أكبر منتج للذهب في أفريقيا، مع احتياطيات غير مستغلة من
+                            المعادن الاستراتيجية والطاقة المتجددة.</p>
+                        <a href="#" class="text-brand-gold font-bold hover:underline">اكتشف الفرص &larr;</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-brand-blue flex items-center justify-center">
+                        <i class="fa-solid fa-map-location-dot text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">السياحة والتراث</h3>
+                        <p class="text-gray-600 mb-4">موطن أهرامات مروي وحضارة كوش. وجهة سياحية بكر تنتظر الاستثمارات في
+                            البنية التحتية الفندقية.</p>
+                        <a href="#" class="text-brand-blue font-bold hover:underline">شاهد العرض &larr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-2xl font-black mb-6">Sudan<span class="text-brand-gold">Pulse</span></div>
+            <div class="flex justify-center gap-6 mb-8 text-2xl">
+                <a href="https://www.linkedin.com/in/sudan-pulse-487b1b3b0/" target="_blank"
+                    class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hidden text-gray-400 hover:text-white transition"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sudanpulse.official?lang=en" target="_blank"
+                    class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="text-gray-500 font-light">&copy; 2026 Sudan Pulse. جميع الحقوق محفوظة. نبض السودان للعالم.</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    // تغيير نمط القائمة العلوية عند التمرير
+    window.addEventListener('scroll', function () {
+        var navbar = document.getElementById('navbar');
+        var links = navbar.querySelectorAll('a span, a.text-white\\/90, a i');
+        var logoIcon = navbar.querySelector('i.fa-heart-pulse');
+        var logoWhiteText = navbar.querySelector('span.text-white');
+        var contactBtn = navbar.querySelector('a[href="#contact"]');
+
+        if (window.scrollY > 50) {
+            navbar.classList.remove('bg-black/20', 'backdrop-blur-md', 'border-white/10');
+            navbar.classList.add('bg-white', 'shadow-md');
+
+            // تغيير لون الروابط
+            links.forEach(link => {
+                if (link.classList.contains('text-white/90')) {
+                    link.classList.remove('text-white/90');
+                    link.classList.add('text-gray-600');
+                }
+            });
+
+            // تخصيص اللوجو
+            if (logoWhiteText) {
+                logoWhiteText.classList.remove('text-white');
+                logoWhiteText.classList.add('text-brand-blue');
+            }
+
+            // تخصيص زر التواصل
+            if (contactBtn) {
+                contactBtn.classList.remove('border', 'border-white/20');
+            }
+
+        } else {
+            navbar.classList.add('bg-black/20', 'backdrop-blur-md', 'border-white/10');
+            navbar.classList.remove('bg-white', 'shadow-md');
+
+            // إرجاع لون الروابط
+            links.forEach(link => {
+                if (link.classList.contains('text-gray-600')) {
+                    link.classList.remove('text-gray-600');
+                    link.classList.add('text-white/90');
+                }
+            });
+
+            // تخصيص اللوجو
+            var brandBlueText = navbar.querySelector('span.text-brand-blue:not(.tracking-tight)');
+            if (logoWhiteText) {
+                logoWhiteText.classList.add('text-white');
+                logoWhiteText.classList.remove('text-brand-blue');
+            }
+
+            // إرجاع زر التواصل
+            if (contactBtn) {
+                contactBtn.classList.add('border', 'border-white/20');
+            }
+        }
+    });
+</script>
+
+</html>
