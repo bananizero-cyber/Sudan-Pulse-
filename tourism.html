@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة والتراث | Sudan Pulse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1E3A8A',   /* أزرق ملكي */
+                            gold: '#D97706',   /* ذهبي */
+                            green: '#059669',  /* أخضر زراعي */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="sudan pulse.jpg" alt="Sudan Pulse Logo"
+                            class="h-12 sm:h-14 w-auto object-contain bg-white rounded-md p-1 shadow-sm">
+                        <span class="font-black text-2xl text-brand-blue tracking-tight">Sudan<span
+                                class="text-brand-gold">Pulse</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="index.html#home" class="text-gray-600 hover:text-brand-gold font-bold transition">الرئيسية</a>
+                    <a href="index.html#about" class="text-gray-600 hover:text-brand-gold font-bold transition">رؤيتنا</a>
+                    <a href="index.html#sectors" class="text-gray-600 hover:text-brand-gold font-bold transition">قطاعات الاستثمار</a>
+                    <a href="index.html#contact"
+                        class="bg-brand-blue text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-lg">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-brand-blue py-24 mt-20 text-white text-center shadow-inner">
+        <div class="max-w-4xl mx-auto px-4">
+            <i class="fa-solid fa-map-location-dot text-6xl mb-6 drop-shadow-md"></i>
+            <h1 class="text-4xl md:text-5xl font-black mb-4 leading-tight">السياحة والتراث</h1>
+            <p class="text-xl opacity-90 font-light">تاريخ عريق ومواقع سياحية بكر تنتظر من يكتشفها</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="py-16 bg-white min-h-[50vh]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <article class="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 leading-tight">الاستثمار في كنوز أفريقيا التاريخية</h2>
+                <div class="w-16 h-1 bg-brand-blue mb-8"></div>
+                
+                <div class="prose prose-lg text-gray-600 leading-relaxed font-medium">
+                    <p class="mb-6">
+                        يعتبر السودان موطناً لحضارات عريقة منها حضارة كوش التي خلّفت أهرامات مروي الشهيرة، والتي تعد من أبرز مواقع التراث العالمي. هذه الثروة التاريخية تشكل فرصة استثنائية لمشاريع التنمية السياحية والفندقية.
+                    </p>
+                    <p class="mb-6">
+                        وجهة سياحية بكر توفر تنوعاً بيئياً هائلاً من شواطئ البحر الأحمر الساحرة المثالية لرياضة الغوص، إلى المحميات الطبيعية المتنوعة. هناك حاجة كبيرة لتطوير البنية التحتية والمرافق المرافقة للسياحة البيئية والمستدامة.
+                    </p>
+                </div>
+                
+                <div class="mt-12 flex justify-center">
+                    <a href="index.html#sectors" class="inline-flex items-center gap-2 text-brand-blue font-bold hover:text-blue-800 transition">
+                        <i class="fa-solid fa-arrow-right"></i> العودة للقطاعات
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-2xl font-black mb-6">Sudan<span class="text-brand-gold">Pulse</span></div>
+            <p class="text-gray-500 font-light">&copy; 2026 Sudan Pulse. جميع الحقوق محفوظة. نبض السودان للعالم.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
